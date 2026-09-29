@@ -259,6 +259,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -267,6 +268,7 @@ body {
   font-family: var(--font-sans), Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   margin: 0;
+  overflow-x: clip;
 }
 
 a {
@@ -285,6 +287,7 @@ button {
 }
 
 .image-wrap {
+  contain: paint;
   background: #ddcbb5;
   position: relative;
   overflow: hidden;
@@ -292,9 +295,7 @@ button {
 
 .image-wrap img {
   object-fit: cover;
-  filter: saturate(1.045) contrast(1.025);
-  transition: transform .6s cubic-bezier(.2, .75, .25, 1), filter .3s;
-  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .site-header {
@@ -517,7 +518,6 @@ h1 i {
 
 .hero-image img {
   object-position: 51% center;
-  filter: saturate(1.08) contrast(1.04) brightness(.98);
 }
 
 .hero-shade {
@@ -699,7 +699,6 @@ h2 {
 
 .story-image img {
   object-position: 40% 54%;
-  filter: saturate(1.035) contrast(1.03) brightness(1.02);
 }
 
 .story-copy {
@@ -767,6 +766,9 @@ h2 {
 }
 
 .social-carousel {
+  contain: layout paint;
+  isolation: isolate;
+  touch-action: pan-y;
   width: calc(100% + 32px);
   margin-left: -16px;
   overflow: hidden;
@@ -774,6 +776,7 @@ h2 {
 
 .social-rail {
   will-change: transform;
+  backface-visibility: hidden;
   gap: 9px;
   width: max-content;
   animation: 38s linear infinite social-loop;
@@ -790,8 +793,12 @@ h2 {
 }
 
 @keyframes social-loop {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
   to {
-    transform: translateX(calc(-50% - 4.5px));
+    transform: translate3d(calc(-50% - 4.5px), 0, 0);
   }
 }
 
@@ -915,7 +922,11 @@ footer .brand {
   font-style: italic;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) and (min-width: 760px) {
+  .image-wrap > img {
+    transition: transform .6s cubic-bezier(.2, .75, .25, 1), filter .3s;
+  }
+
   .image-wrap:hover > img {
     filter: saturate(1.07) contrast(1.035);
     transform: scale(1.025);
@@ -1176,8 +1187,12 @@ footer .brand {
   }
 
   @keyframes social-loop {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+
     to {
-      transform: translateX(calc(-50% - 7px));
+      transform: translate3d(calc(-50% - 7px), 0, 0);
     }
   }
 
