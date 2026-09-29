@@ -98,10 +98,11 @@ button { color: inherit; }
 
 .hero {
   position: relative;
-  height: calc(100svh - 66px);
+  height: calc(var(--initial-mobile-viewport-height, 100svh) - 66px);
   min-height: 650px;
   max-height: 820px;
   overflow: hidden;
+  contain: layout paint;
   color: var(--white);
 }
 .hero-copy {

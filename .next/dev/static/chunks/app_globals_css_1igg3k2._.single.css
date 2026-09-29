@@ -163,7 +163,8 @@ button {
 }
 
 .hero {
-  height: calc(100svh - 66px);
+  height: calc(var(--initial-mobile-viewport-height, 100svh) - 66px);
+  contain: layout paint;
   min-height: 650px;
   max-height: 820px;
   color: var(--white);
