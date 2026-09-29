@@ -8,9 +8,13 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
 body {
   margin: 0;
+  overflow-x: clip;
   background: var(--cream);
   color: var(--navy);
   font-family: var(--font-sans), Arial, sans-serif;
@@ -19,12 +23,15 @@ body {
 a { color: inherit; text-decoration: none; }
 button { color: inherit; }
 .section-shell { width: 100%; max-width: 1320px; margin: 0 auto; }
-.image-wrap { position: relative; overflow: hidden; background: #ddcbb5; }
+.image-wrap {
+  position: relative;
+  overflow: hidden;
+  contain: paint;
+  background: #ddcbb5;
+}
 .image-wrap img {
   object-fit: cover;
-  filter: saturate(1.045) contrast(1.025);
-  transform: translateZ(0);
-  transition: transform 600ms cubic-bezier(.2,.75,.25,1), filter .3s ease;
+  backface-visibility: hidden;
 }
 
 .site-header {
@@ -148,7 +155,7 @@ h1 i { font-weight: 500; }
 .button--light { background: var(--cream); color: var(--navy); border-color: var(--cream); }
 .button--light:hover { background: var(--powder); color: var(--navy); border-color: var(--powder); }
 .hero-image { position: absolute; inset: 0; height: 100%; background: var(--navy); }
-.hero-image img { object-position: 51% center; filter: saturate(1.08) contrast(1.04) brightness(.98); }
+.hero-image img { object-position: 51% center; }
 .hero-shade {
   position: absolute;
   z-index: 1;
@@ -237,7 +244,7 @@ h2 {
 .menu-link { margin-left: 24px; }
 
 .story-image { height: 102vw; max-height: 720px; }
-.story-image img { object-position: 40% 54%; filter: saturate(1.035) contrast(1.03) brightness(1.02); }
+.story-image img { object-position: 40% 54%; }
 .story-copy { padding: 77px 19px 82px; }
 .story-copy h2 { font-size: 49px; }
 .story-copy > p { max-width: 420px; margin-bottom: 0; font-size: 15px; line-height: 1.7; }
@@ -266,12 +273,20 @@ h2 {
 }
 .gallery-intro p { max-width: 220px; margin: 0; font-size: 12px; line-height: 1.5; }
 .gallery-intro span { display: none; font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
-.social-carousel { width: calc(100% + 32px); margin-left: -16px; overflow: hidden; }
+.social-carousel {
+  width: calc(100% + 32px);
+  margin-left: -16px;
+  overflow: hidden;
+  contain: layout paint;
+  isolation: isolate;
+  touch-action: pan-y;
+}
 .social-rail {
   display: flex;
   width: max-content;
   gap: 9px;
   will-change: transform;
+  backface-visibility: hidden;
   animation: social-loop 38s linear infinite;
 }
 .social-post {
@@ -283,7 +298,8 @@ h2 {
   box-shadow: 0 9px 22px rgba(23, 59, 99, .09);
 }
 @keyframes social-loop {
-  to { transform: translateX(calc(-50% - 4.5px)); }
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(calc(-50% - 4.5px), 0, 0); }
 }
 
 .preorder { background: var(--powder); text-align: center; }
@@ -319,7 +335,8 @@ footer .brand { width: 84px; height: 84px; margin-bottom: 44px; }
 .footer-links a { font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .footer-note { margin: 0; font-family: var(--font-serif); font-size: 14px; font-style: italic; text-align: center; }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) and (min-width: 760px) {
+  .image-wrap > img { transition: transform 600ms cubic-bezier(.2,.75,.25,1), filter .3s ease; }
   .image-wrap:hover > img { transform: scale(1.025); }
   .image-wrap:hover > img { filter: saturate(1.07) contrast(1.035); }
   .hero-image:hover > img { filter: saturate(1.1) contrast(1.05) brightness(.98); }
@@ -373,7 +390,8 @@ footer .brand { width: 84px; height: 84px; margin-bottom: 44px; }
   .social-rail { gap: 14px; animation-duration: 50s; }
   .social-post { flex-basis: min(21vw, 310px); height: min(28vw, 410px); border-radius: 15px; }
   @keyframes social-loop {
-    to { transform: translateX(calc(-50% - 7px)); }
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(calc(-50% - 7px), 0, 0); }
   }
   .stripe-band { height: 34px; background-size: auto; }
   .preorder-inner { padding: 100px 20px 112px; }
