@@ -530,17 +530,23 @@ h2 {
 
 .social-rail {
   will-change: transform;
-  gap: 9px;
   width: max-content;
-  animation: 7s linear infinite social-loop;
+  animation: 8s linear infinite social-loop;
+  display: flex;
+}
+
+.social-set {
+  flex: none;
+  gap: 9px;
+  padding-right: 9px;
   display: flex;
 }
 
 .social-post {
   border: 1px solid #173b631a;
   border-radius: 13px;
-  flex: 0 0 24vw;
-  height: 32vw;
+  flex: 0 0 62vw;
+  height: 82vw;
   max-height: 445px;
   box-shadow: 0 9px 22px #173b6317;
 }
@@ -551,7 +557,7 @@ h2 {
   }
 
   to {
-    transform: translateX(calc(-50% - 4.5px));
+    transform: translateX(-50%);
   }
 }
 
@@ -929,8 +935,12 @@ footer .brand {
   }
 
   .social-rail {
-    gap: 14px;
     animation-duration: 50s;
+  }
+
+  .social-set {
+    gap: 14px;
+    padding-right: 14px;
   }
 
   .social-post {
@@ -945,7 +955,7 @@ footer .brand {
     }
 
     to {
-      transform: translateX(calc(-50% - 7px));
+      transform: translateX(-50%);
     }
   }
 

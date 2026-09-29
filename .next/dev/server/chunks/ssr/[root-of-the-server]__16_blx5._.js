@@ -55,49 +55,55 @@ const posts = [
     }
 ];
 function GalleryCarousel() {
-    const loopPosts = [
-        ...posts,
-        ...posts
-    ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "social-carousel",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "social-rail",
-            children: loopPosts.map((post, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                    className: "social-post image-wrap",
-                    href: post.href,
-                    target: "_blank",
-                    rel: "noreferrer",
-                    "aria-label": `View Sweets & Sourdough on Instagram: ${post.alt}`,
-                    "aria-hidden": index >= posts.length,
-                    tabIndex: index >= posts.length ? -1 : 0,
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                        src: post.src,
-                        alt: post.alt,
-                        fill: true,
-                        quality: 90,
-                        sizes: "(max-width: 759px) 24vw, 22vw",
-                        style: {
-                            objectPosition: post.position
-                        }
-                    }, void 0, false, {
-                        fileName: "[project]/app/GalleryCarousel.tsx",
-                        lineNumber: 59,
-                        columnNumber: 13
-                    }, this)
-                }, `${post.src}-${index}`, false, {
+            children: [
+                0,
+                1
+            ].map((setIndex)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "social-set",
+                    "aria-hidden": setIndex === 1,
+                    children: posts.map((post)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                            className: "social-post image-wrap",
+                            href: post.href,
+                            target: "_blank",
+                            rel: "noreferrer",
+                            "aria-label": `View Sweets & Sourdough on Instagram: ${post.alt}`,
+                            tabIndex: setIndex === 1 ? -1 : 0,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                src: post.src,
+                                alt: post.alt,
+                                fill: true,
+                                quality: 90,
+                                sizes: "(max-width: 759px) 62vw, 22vw",
+                                style: {
+                                    objectPosition: post.position
+                                }
+                            }, void 0, false, {
+                                fileName: "[project]/app/GalleryCarousel.tsx",
+                                lineNumber: 58,
+                                columnNumber: 17
+                            }, this)
+                        }, `${post.src}-${setIndex}`, false, {
+                            fileName: "[project]/app/GalleryCarousel.tsx",
+                            lineNumber: 49,
+                            columnNumber: 15
+                        }, this))
+                }, setIndex, false, {
                     fileName: "[project]/app/GalleryCarousel.tsx",
-                    lineNumber: 49,
+                    lineNumber: 47,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/app/GalleryCarousel.tsx",
-            lineNumber: 47,
+            lineNumber: 45,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/GalleryCarousel.tsx",
-        lineNumber: 46,
+        lineNumber: 44,
         columnNumber: 5
     }, this);
 }

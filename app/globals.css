@@ -283,13 +283,18 @@ h2 {
 .social-rail {
   display: flex;
   width: max-content;
-  gap: 9px;
   will-change: transform;
-  animation: social-loop 7s linear infinite;
+  animation: social-loop 8s linear infinite;
+}
+.social-set {
+  display: flex;
+  flex: none;
+  gap: 9px;
+  padding-right: 9px;
 }
 .social-post {
-  flex: 0 0 24vw;
-  height: 32vw;
+  flex: 0 0 62vw;
+  height: 82vw;
   max-height: 445px;
   border: 1px solid rgba(23, 59, 99, .1);
   border-radius: 13px;
@@ -297,7 +302,7 @@ h2 {
 }
 @keyframes social-loop {
   from { transform: translateX(0); }
-  to { transform: translateX(calc(-50% - 4.5px)); }
+  to { transform: translateX(-50%); }
 }
 
 .preorder { background: var(--powder); text-align: center; }
@@ -385,11 +390,12 @@ footer .brand { width: 84px; height: 84px; margin-bottom: 44px; }
   .gallery-intro p { max-width: none; font-size: 13px; }
   .gallery-intro span { display: block; }
   .social-carousel { width: calc(100% + 8vw); margin-left: -4vw; }
-  .social-rail { gap: 14px; animation-duration: 50s; }
+  .social-rail { animation-duration: 50s; }
+  .social-set { gap: 14px; padding-right: 14px; }
   .social-post { flex-basis: min(21vw, 310px); height: min(28vw, 410px); border-radius: 15px; }
   @keyframes social-loop {
     from { transform: translateX(0); }
-    to { transform: translateX(calc(-50% - 7px)); }
+    to { transform: translateX(-50%); }
   }
   .stripe-band { height: 34px; background-size: auto; }
   .preorder-inner { padding: 100px 20px 112px; }
