@@ -522,8 +522,6 @@ h2 {
 }
 
 .social-carousel {
-  contain: layout paint;
-  isolation: isolate;
   touch-action: pan-y;
   width: calc(100% + 32px);
   margin-left: -16px;
@@ -532,7 +530,6 @@ h2 {
 
 .social-rail {
   will-change: transform;
-  backface-visibility: hidden;
   gap: 9px;
   width: max-content;
   animation: 38s linear infinite social-loop;
@@ -550,11 +547,11 @@ h2 {
 
 @keyframes social-loop {
   from {
-    transform: translate3d(0, 0, 0);
+    transform: translateX(0);
   }
 
   to {
-    transform: translate3d(calc(-50% - 4.5px), 0, 0);
+    transform: translateX(calc(-50% - 4.5px));
   }
 }
 
@@ -944,11 +941,11 @@ footer .brand {
 
   @keyframes social-loop {
     from {
-      transform: translate3d(0, 0, 0);
+      transform: translateX(0);
     }
 
     to {
-      transform: translate3d(calc(-50% - 7px), 0, 0);
+      transform: translateX(calc(-50% - 7px));
     }
   }
 

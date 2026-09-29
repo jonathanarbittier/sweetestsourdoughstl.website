@@ -278,8 +278,6 @@ h2 {
   width: calc(100% + 32px);
   margin-left: -16px;
   overflow: hidden;
-  contain: layout paint;
-  isolation: isolate;
   touch-action: pan-y;
 }
 .social-rail {
@@ -287,7 +285,6 @@ h2 {
   width: max-content;
   gap: 9px;
   will-change: transform;
-  backface-visibility: hidden;
   animation: social-loop 38s linear infinite;
 }
 .social-post {
@@ -299,8 +296,8 @@ h2 {
   box-shadow: 0 9px 22px rgba(23, 59, 99, .09);
 }
 @keyframes social-loop {
-  from { transform: translate3d(0, 0, 0); }
-  to { transform: translate3d(calc(-50% - 4.5px), 0, 0); }
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - 4.5px)); }
 }
 
 .preorder { background: var(--powder); text-align: center; }
@@ -391,8 +388,8 @@ footer .brand { width: 84px; height: 84px; margin-bottom: 44px; }
   .social-rail { gap: 14px; animation-duration: 50s; }
   .social-post { flex-basis: min(21vw, 310px); height: min(28vw, 410px); border-radius: 15px; }
   @keyframes social-loop {
-    from { transform: translate3d(0, 0, 0); }
-    to { transform: translate3d(calc(-50% - 7px), 0, 0); }
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-50% - 7px)); }
   }
   .stripe-band { height: 34px; background-size: auto; }
   .preorder-inner { padding: 100px 20px 112px; }
