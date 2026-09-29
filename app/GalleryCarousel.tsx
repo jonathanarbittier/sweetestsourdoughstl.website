@@ -40,32 +40,31 @@ const posts = [
 ];
 
 export default function GalleryCarousel() {
+  const loopPosts = [...posts, ...posts];
+
   return (
     <div className="social-carousel">
       <div className="social-rail">
-        {[0, 1].map((setIndex) => (
-          <div className="social-set" aria-hidden={setIndex === 1} key={setIndex}>
-            {posts.map((post) => (
-              <a
-                className="social-post image-wrap"
-                href={post.href}
-                target="_blank"
-                rel="noreferrer"
-                aria-label={`View Sweets & Sourdough on Instagram: ${post.alt}`}
-                tabIndex={setIndex === 1 ? -1 : 0}
-                key={`${post.src}-${setIndex}`}
-              >
-                <Image
-                  src={post.src}
-                  alt={post.alt}
-                  fill
-                  quality={90}
-                  sizes="(max-width: 759px) 62vw, 22vw"
-                  style={{ objectPosition: post.position }}
-                />
-              </a>
-            ))}
-          </div>
+        {loopPosts.map((post, index) => (
+          <a
+            className="social-post image-wrap"
+            href={post.href}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`View Sweets & Sourdough on Instagram: ${post.alt}`}
+            aria-hidden={index >= posts.length}
+            tabIndex={index >= posts.length ? -1 : 0}
+            key={`${post.src}-${index}`}
+          >
+            <Image
+              src={post.src}
+              alt={post.alt}
+              fill
+              quality={90}
+              sizes="(max-width: 759px) 24vw, 22vw"
+              style={{ objectPosition: post.position }}
+            />
+          </a>
         ))}
       </div>
     </div>
