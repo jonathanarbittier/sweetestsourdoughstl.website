@@ -19,3 +19,4 @@
 {"timestamp":"00:46:56.935","source":"Browser","level":"ERROR","message":"Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template). "}
 {"timestamp":"00:46:56.938","source":"Server","level":"ERROR","message":"[browser] \"Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template).\" \"\""}
 {"timestamp":"00:47:14.836","source":"Server","level":"LOG","message":"✓ Compiled in 22ms"}
+{"timestamp":"00:50:09.259","source":"Server","level":"LOG","message":"✓ Compiled in 52ms"}

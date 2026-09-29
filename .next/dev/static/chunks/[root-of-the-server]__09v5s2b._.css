@@ -777,15 +777,15 @@ h2 {
   will-change: transform;
   gap: 9px;
   width: max-content;
-  animation: 14s linear infinite social-loop;
+  animation: 7s linear infinite social-loop;
   display: flex;
 }
 
 .social-post {
   border: 1px solid #173b631a;
   border-radius: 13px;
-  flex: 0 0 62vw;
-  height: 82vw;
+  flex: 0 0 24vw;
+  height: 32vw;
   max-height: 445px;
   box-shadow: 0 9px 22px #173b6317;
 }

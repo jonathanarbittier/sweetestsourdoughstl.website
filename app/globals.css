@@ -285,11 +285,11 @@ h2 {
   width: max-content;
   gap: 9px;
   will-change: transform;
-  animation: social-loop 14s linear infinite;
+  animation: social-loop 7s linear infinite;
 }
 .social-post {
-  flex: 0 0 62vw;
-  height: 82vw;
+  flex: 0 0 24vw;
+  height: 32vw;
   max-height: 445px;
   border: 1px solid rgba(23, 59, 99, .1);
   border-radius: 13px;

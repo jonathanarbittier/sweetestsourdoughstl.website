@@ -76,7 +76,7 @@ function GalleryCarousel() {
                         alt: post.alt,
                         fill: true,
                         quality: 90,
-                        sizes: "(max-width: 759px) 62vw, 22vw",
+                        sizes: "(max-width: 759px) 24vw, 22vw",
                         style: {
                             objectPosition: post.position
                         }
