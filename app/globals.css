@@ -285,7 +285,7 @@ h2 {
   width: max-content;
   gap: 9px;
   will-change: transform;
-  animation: social-loop 38s linear infinite;
+  animation: social-loop 14s linear infinite;
 }
 .social-post {
   flex: 0 0 62vw;

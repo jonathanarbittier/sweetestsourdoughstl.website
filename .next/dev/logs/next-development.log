@@ -15,3 +15,7 @@
 {"timestamp":"00:18:09.199","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/images/sweets-sourdough-logo-badge.png\\\" is using quality \\\"95\\\" which is not configured in images.qualities [75, 90]. Please update your config to [75, 90, 95].\\nRead more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities\\u001b[39m\""}
 {"timestamp":"00:26:57.523","source":"Server","level":"LOG","message":"✓ Compiled in 132ms"}
 {"timestamp":"00:32:38.621","source":"Server","level":"LOG","message":"✓ Compiled in 185ms"}
+{"timestamp":"00:46:34.325","source":"Server","level":"LOG","message":"✓ Compiled in 121ms"}
+{"timestamp":"00:46:56.935","source":"Browser","level":"ERROR","message":"Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template). "}
+{"timestamp":"00:46:56.938","source":"Server","level":"ERROR","message":"[browser] \"Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template).\" \"\""}
+{"timestamp":"00:47:14.836","source":"Server","level":"LOG","message":"✓ Compiled in 22ms"}

@@ -532,7 +532,7 @@ h2 {
   will-change: transform;
   gap: 9px;
   width: max-content;
-  animation: 38s linear infinite social-loop;
+  animation: 14s linear infinite social-loop;
   display: flex;
 }
 
