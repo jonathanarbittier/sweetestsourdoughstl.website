@@ -25,7 +25,23 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${serif.variable} ${sans.variable}`}>{children}</body>
+      <body className={`${serif.variable} ${sans.variable}`}>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(() => {
+              const root = document.documentElement;
+              const lockMobileViewport = () => {
+                root.style.setProperty("--initial-mobile-viewport-height", window.innerHeight + "px");
+              };
+              lockMobileViewport();
+              window.addEventListener("orientationchange", () => {
+                window.setTimeout(lockMobileViewport, 300);
+              }, { passive: true });
+            })();`,
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
