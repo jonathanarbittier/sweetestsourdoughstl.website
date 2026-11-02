@@ -410,6 +410,7 @@ footer .brand { width: 84px; height: 84px; margin-bottom: 44px; }
 .editorial-photo { min-width: 0; margin: 0; }
 .editorial-photo-image { width: 100%; aspect-ratio: 4 / 5; }
 .editorial-photo figcaption { padding-top: 12px; font-size: 10px; line-height: 1.6; letter-spacing: .035em; }
+.story-page .editorial-photo { box-shadow: 0 0 0 8px var(--white), 0 0 0 10px var(--powder); }
 .story-chapter { margin-top: 70px; padding-top: 70px; border-top: 1px solid var(--line); }
 .story-chapter .editorial-copy { grid-row: 1; }
 .editorial-page-heading { margin-bottom: 42px; }
