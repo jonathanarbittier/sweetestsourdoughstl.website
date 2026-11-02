@@ -15,37 +15,37 @@ type InstagramPost = {
 const instagramPosts: InstagramPost[] = [
   {
     url: "https://www.instagram.com/p/DfNbDa-FosD/",
-    image: "/images/instagram/DfNbDa-FosD.jpg",
+    image: "/images/instagram/DfNbDa-FosD.webp",
     alt: "Sweets & Sourdough Thanksgiving menu announcement with an autumn bow",
     kind: "photo",
   },
   {
     url: "https://www.instagram.com/p/De9z7Z5xd0R/",
-    image: "/images/instagram/De9z7Z5xd0R.jpg",
+    image: "/images/instagram/De9z7Z5xd0R.webp",
     alt: "Sourdough bread and cookie giveaway on a blue gingham background",
     kind: "photo",
   },
   {
     url: "https://www.instagram.com/p/De7b-twBnq3/",
-    image: "/images/instagram/De7b-twBnq3.jpg",
+    image: "/images/instagram/De7b-twBnq3.webp",
     alt: "Local beekeeper Mike Ferguson standing beside the stocked bakery cart",
     kind: "photo",
   },
   {
     url: "https://www.instagram.com/p/DfFJw6Flro-/",
-    image: "/images/instagram/DfFJw6Flro-.jpg",
+    image: "/images/instagram/DfFJw6Flro-.webp",
     alt: "Halloween bakery illustration reading This house is haunted by carbs",
     kind: "photo",
   },
   {
     url: "https://www.instagram.com/p/Der2FdvholN/",
-    image: "/images/instagram/Der2FdvholN.jpg",
+    image: "/images/instagram/Der2FdvholN.webp",
     alt: "Autumn and holiday cart schedule displayed over a photo of the bakery cart",
     kind: "photo",
   },
   {
     url: "https://www.instagram.com/p/Dd1ZJ44BUI1/",
-    image: "/images/instagram/Dd1ZJ44BUI1.jpg",
+    image: "/images/instagram/Dd1ZJ44BUI1.webp",
     alt: "Sourdough loaf, cookies and biscuits giveaway with a blue illustrated bow",
     kind: "photo",
   },
