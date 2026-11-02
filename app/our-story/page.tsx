@@ -21,7 +21,7 @@ export default function OurStoryPage() {
               <p>[Add a short introduction from the founder, in their own words.]</p>
             </div>
           </div>
-          <EditorialPhoto src="/images/sweetest-sourdough/SweetestSourdoughSTL_2nd_-70.webp" alt="The Sweets & Sourdough founder smiling and holding a bagged loaf at the cart" position="50% 30%" eager />
+          <EditorialPhoto src="/images/sweetest-sourdough/SweetestSourdoughSTL_2nd_-67.webp" alt="The founder and a group of neighbors smiling together in front of the bakery carts" aspectRatio="4 / 3" eager />
         </section>
 
         <section className="editorial-split story-chapter" aria-labelledby="beginnings-heading">
