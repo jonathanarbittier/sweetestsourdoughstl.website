@@ -22,8 +22,8 @@ const bakes = [
   {
     name: "Cookies",
     description: "Sweet, small-batch treats packed up and ready for the neighborhood.",
-    image: "/images/sweetest-sourdough/SweetestSourdoughSTL_-25.webp",
-    alt: "An assortment of cookies packed in a windowed bakery box",
+    image: "/images/sweetest-sourdough/cookie-box-assortment.webp",
+    alt: "An assortment of cookies in a windowed bakery box tied with blue and white string",
     position: "50% 50%",
   },
   {
