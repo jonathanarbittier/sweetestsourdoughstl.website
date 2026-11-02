@@ -89,7 +89,7 @@ export default function Home() {
 
       <section className="story" id="story">
         <div className="story-image image-wrap">
-          <Image src="/images/sweetest-sourdough/SweetestSourdoughSTL_2nd_-71.webp" alt="The Sweets & Sourdough founder holding a loaf of bread in front of the bakery cart" fill quality={90} sizes="(max-width: 759px) 100vw, 54vw" style={{ objectPosition: "50% 35%" }} />
+          <Image src="/images/sweetest-sourdough/SweetestSourdoughSTL_2nd_-67.webp" alt="The founder and a group of neighbors smiling together in front of the bakery carts" fill quality={90} sizes="(max-width: 759px) 100vw, 54vw" style={{ objectPosition: "50% 50%" }} />
         </div>
         <div className="story-copy">
           <div>
