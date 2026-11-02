@@ -1,18 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import GalleryCarousel from "./GalleryCarousel";
+import { HOTPLATE_URL } from "./site-links";
 
-function Button({ children, href = "#preorder", light = false }: { children: React.ReactNode; href?: string; light?: boolean }) {
+function Button({ children, href = HOTPLATE_URL, light = false }: { children: React.ReactNode; href?: string; light?: boolean }) {
   return (
-    <a className={`button${light ? " button--light" : ""}`} href={href}>
+    <a className={`button${light ? " button--light" : ""}`} href={href} target="_blank" rel="noopener noreferrer">
       <span>{children}</span>
-    </a>
-  );
-}
-
-function BrandMark() {
-  return (
-    <a href="#top" className="brand" aria-label="Sweets and Sourdough home">
-      <Image src="/images/sweets-sourdough-logo-badge.png" alt="Sweets & Sourdough" width={328} height={328} quality={95} />
     </a>
   );
 }
@@ -21,45 +15,29 @@ const bakes = [
   {
     name: "Sourdough",
     description: "Naturally leavened loaves, baked in small batches for the weekend.",
-    image: "/images/real-sourdough.webp",
+    image: "/images/sweetest-sourdough/SweetestSourdoughSTL_-4.webp",
+    alt: "A crusty sourdough loaf in a paper bag with the Sweets & Sourdough sticker",
     position: "50% 50%",
   },
   {
     name: "Cookies",
     description: "Sweet, small-batch treats packed up and ready for the neighborhood.",
-    image: "/images/real-cookies.webp",
-    position: "50% 52%",
+    image: "/images/sweetest-sourdough/SweetestSourdoughSTL_-25.webp",
+    alt: "An assortment of cookies packed in a windowed bakery box",
+    position: "50% 50%",
   },
   {
     name: "Biscuits & weekend specials",
     description: "Buttery biscuits and rotating seasonal bakes from the weekend menu.",
-    image: "/images/real-biscuits.webp",
-    position: "50% 62%",
+    image: "/images/sweetest-sourdough/SweetestSourdoughSTL_-44.webp",
+    alt: "A close-up assortment of biscuits, muffins, and other baked goods",
+    position: "60% 50%",
   },
 ];
 
 export default function Home() {
   return (
-    <main id="top">
-      <header className="site-header">
-        <BrandMark />
-        <nav className="desktop-nav" aria-label="Main navigation">
-          <a href="#bakes">Shop</a>
-          <a href="#story">Our Story</a>
-          <a href="#cart">Find the Cart</a>
-          <a href="#gallery">Instagram</a>
-          <a href="#preorder" className="nav-cta">Preorder</a>
-        </nav>
-        <details className="mobile-menu">
-          <summary className="menu-button" aria-label="Open menu"><span></span><span></span></summary>
-          <nav aria-label="Mobile navigation">
-            <a href="#preorder">Preorder <span>01</span></a>
-            <a href="#cart">Find the cart <span>02</span></a>
-            <a href="https://instagram.com/sweetestsourdoughstl">Instagram <span>03</span></a>
-          </nav>
-        </details>
-      </header>
-
+    <>
       <section className="hero">
         <div className="hero-image image-wrap">
           <Image src="/images/real-hero.webp" alt="Sweets & Sourdough roadside carts with the baker and a customer" fill priority quality={90} sizes="100vw" />
@@ -83,7 +61,7 @@ export default function Home() {
             <a className="text-link" href="https://maps.google.com/?q=Creve+Coeur+Mill+Rd,+Creve+Coeur,+Missouri" target="_blank" rel="noreferrer">Get directions</a>
           </div>
           <div className="cart-image image-wrap">
-            <Image src="/images/real-cart.webp" alt="The real Sweets & Sourdough roadside bakery cart stocked with bread and treats" fill quality={90} sizes="(max-width: 760px) 100vw, 48vw" />
+            <Image src="/images/sweetest-sourdough/SweetestSourdoughSTL_-7.webp" alt="The Sweets & Sourdough cart with branded signs, bagged loaves, and baked treats" fill quality={90} sizes="(max-width: 760px) 100vw, 48vw" style={{ objectPosition: "50% 40%" }} />
             <div className="cart-sign"><span>Bread</span><i>&amp;</i><span>Treats</span></div>
           </div>
         </div>
@@ -98,39 +76,41 @@ export default function Home() {
           {bakes.map((bake) => (
             <article className="bake-card" key={bake.name}>
               <div className="bake-image image-wrap">
-                <Image src={bake.image} alt={bake.name} fill quality={90} sizes="(max-width: 760px) 84vw, 33vw" style={{ objectPosition: bake.position }} />
+                <Image src={bake.image} alt={bake.alt} fill quality={90} sizes="(max-width: 760px) 84vw, 33vw" style={{ objectPosition: bake.position }} />
               </div>
               <h3>{bake.name}</h3>
               <p>{bake.description}</p>
-              <a href="#preorder" className="bake-order">Preorder</a>
+              <a href={HOTPLATE_URL} className="bake-order" target="_blank" rel="noopener noreferrer">Preorder</a>
             </article>
           ))}
         </div>
-        <a className="text-link menu-link" href="#preorder">See this week’s preorder menu</a>
+        <a className="text-link menu-link" href={HOTPLATE_URL} target="_blank" rel="noopener noreferrer">See this week’s preorder menu</a>
       </section>
 
       <section className="story" id="story">
         <div className="story-image image-wrap">
-          <Image src="/images/real-story.webp" alt="Sweets & Sourdough baker Heather Tuttle greeting a customer" fill quality={90} sizes="(max-width: 759px) 100vw, 54vw" />
+          <Image src="/images/sweetest-sourdough/SweetestSourdoughSTL_2nd_-71.webp" alt="The Sweets & Sourdough founder holding a loaf of bread in front of the bakery cart" fill quality={90} sizes="(max-width: 759px) 100vw, 54vw" style={{ objectPosition: "50% 35%" }} />
         </div>
         <div className="story-copy">
           <div>
             <h2>Small bakery.<br />Big sourdough love</h2>
           </div>
-          <p>Sweets &amp; Sourdough is a neighborhood micro bakery serving fresh loaves and sweet treats from a roadside cart in Creve Coeur. Baked in small batches and made for the people who make a neighborhood feel like home.</p>
+          <div className="story-preview">
+            <p>Sweets &amp; Sourdough is a neighborhood micro bakery serving fresh loaves and sweet treats from a roadside cart in Creve Coeur. Baked in small batches and made for the people who make a neighborhood feel like home.</p>
+            <Link className="text-link" href="/our-story">Read Our Story</Link>
+          </div>
         </div>
       </section>
 
       <section className="gallery section-shell" id="gallery">
         <div className="section-heading gallery-heading">
           <div><h2>Around the cart</h2></div>
-          <a className="gallery-follow" href="https://instagram.com/sweetestsourdoughstl" target="_blank" rel="noreferrer">Follow us</a>
         </div>
         <div className="gallery-intro">
           <p>Fresh bakes, familiar faces and weekends in Creve Coeur.</p>
-          <span>@sweetestsourdoughstl</span>
         </div>
         <GalleryCarousel />
+        <a className="gallery-follow gallery-follow--below" href="https://instagram.com/sweetestsourdoughstl" target="_blank" rel="noreferrer">Follow @sweetestsourdoughstl</a>
       </section>
 
       <section className="preorder" id="preorder">
@@ -143,15 +123,6 @@ export default function Home() {
         </div>
       </section>
 
-      <footer>
-        <div className="footer-stripes" aria-hidden="true"></div>
-        <div className="footer-inner section-shell">
-          <BrandMark />
-          <div className="footer-details"><p>Micro Bakery<br />Creve Coeur, Missouri</p><p>Saturday + Sunday<br />8am–3pm</p></div>
-          <div className="footer-links"><a href="https://instagram.com/sweetestsourdoughstl">Instagram</a><a href="#preorder">Preorder</a></div>
-          <p className="footer-note">Roadside cart with big sourdough love!</p>
-        </div>
-      </footer>
-    </main>
+    </>
   );
 }

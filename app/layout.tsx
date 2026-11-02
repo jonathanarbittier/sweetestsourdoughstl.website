@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import SiteFooter from "./SiteFooter";
+import SiteHeader from "./SiteHeader";
 import "./globals.css";
 
 const serif = Cormorant_Garamond({
@@ -40,7 +42,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             })();`,
           }}
         />
-        {children}
+        <SiteHeader />
+        <main id="top">{children}</main>
+        <SiteFooter />
       </body>
     </html>
   );

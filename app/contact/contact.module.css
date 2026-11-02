@@ -1,0 +1,149 @@
+.page {
+  padding: 40px 19px 64px;
+}
+
+.layout {
+  display: grid;
+  gap: 38px;
+}
+
+.layout > * {
+  min-width: 0;
+}
+
+.details {
+  display: grid;
+  align-content: start;
+  gap: 38px;
+}
+
+.contactList dt,
+.visitList dt {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.details h1,
+.details h2 {
+  margin-bottom: 24px;
+  font-size: 40px;
+  line-height: 1.03;
+}
+
+.contactList,
+.visitList {
+  display: grid;
+  gap: 22px;
+  margin: 0;
+}
+
+.contactList > div,
+.visitList > div {
+  display: grid;
+  gap: 5px;
+}
+
+.contactList dd,
+.visitList dd {
+  min-width: 0;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.contactList dd > span,
+.contactList dd > small {
+  display: block;
+}
+
+.contactList dd > small,
+.directionsNote {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.contactList dd > small {
+  margin-top: 3px;
+}
+
+.contactList :global(.text-link) {
+  max-width: 100%;
+  margin-top: 0;
+  overflow-wrap: anywhere;
+}
+
+.details :global(.text-link) {
+  font-size: 11px;
+}
+
+.visit :global(.text-link) {
+  margin-top: 22px;
+}
+
+.directionsNote {
+  margin: 10px 0 0;
+}
+
+.photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: transparent;
+}
+
+.photo img {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.page a:focus-visible {
+  outline: 2px solid var(--navy);
+  outline-offset: 5px;
+}
+
+@media (min-width: 760px) {
+  .page {
+    padding: 48px 4vw 70px;
+  }
+
+  .layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 7vw;
+  }
+
+  .details {
+    grid-column: 1;
+    grid-row: 1;
+    gap: 42px;
+  }
+
+  .details h1,
+  .details h2 {
+    font-size: clamp(38px, 3.5vw, 48px);
+  }
+
+  .contactList dd,
+  .visitList dd {
+    font-size: clamp(16px, 1.3vw, 18px);
+  }
+
+  .contactList > div {
+    grid-template-columns: 94px minmax(0, 1fr);
+    gap: 17px;
+  }
+
+  .visitList {
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .photo {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    width: min(100%, 420px);
+  }
+}
