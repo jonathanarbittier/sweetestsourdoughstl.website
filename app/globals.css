@@ -410,20 +410,6 @@ footer .brand { width: 84px; height: 84px; margin-bottom: 44px; }
 .editorial-photo { min-width: 0; margin: 0; }
 .editorial-photo-image { width: 100%; aspect-ratio: 4 / 5; }
 .editorial-photo figcaption { padding-top: 12px; font-size: 10px; line-height: 1.6; letter-spacing: .035em; }
-.story-page .editorial-photo {
-  padding: 18px;
-  border: 1px solid var(--line);
-  background-color: var(--white);
-  background-image:
-    repeating-linear-gradient(90deg, var(--white) 0 16px, var(--powder) 16px 32px),
-    repeating-linear-gradient(90deg, var(--white) 0 16px, var(--powder) 16px 32px),
-    repeating-linear-gradient(0deg, var(--white) 0 16px, var(--powder) 16px 32px),
-    repeating-linear-gradient(0deg, var(--white) 0 16px, var(--powder) 16px 32px);
-  background-position: top, bottom, left, right;
-  background-size: 100% 18px, 100% 18px, 18px 100%, 18px 100%;
-  background-repeat: no-repeat;
-}
-.story-page .editorial-photo-image { border: 6px solid var(--white); }
 .story-chapter { margin-top: 70px; padding-top: 70px; border-top: 1px solid var(--line); }
 .story-chapter .editorial-copy { grid-row: 1; }
 .editorial-page-heading { margin-bottom: 42px; }

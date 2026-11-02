@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function OurStoryPage() {
   return (
     <>
-      <div className="editorial-page section-shell story-page">
+      <div className="editorial-page section-shell">
         <section className="editorial-split story-introduction" aria-labelledby="story-heading">
           <div className="editorial-copy">
             <p className="editorial-eyebrow">Our story</p>
