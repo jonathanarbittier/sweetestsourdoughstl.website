@@ -45,8 +45,6 @@ export default function ContactPage() {
               <div><dt>Where</dt><dd>Off Creve Coeur Mill Rd.<br />Creve Coeur, Missouri</dd></div>
               <div><dt>When</dt><dd>Saturday + Sunday<br />8am–3pm</dd></div>
             </dl>
-            <a className="text-link" href="https://maps.google.com/?q=Creve+Coeur+Mill+Rd,+Creve+Coeur,+Missouri" target="_blank" rel="noopener noreferrer">Get Directions</a>
-            <p className={styles.directionsNote}>Road-area directions only. Exact cart pin to be confirmed.</p>
           </section>
         </div>
 

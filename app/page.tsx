@@ -58,7 +58,6 @@ export default function Home() {
               <div><span>When</span><strong>Saturday + Sunday<br />8am–3pm</strong></div>
               <div><span>Where</span><strong>Off Creve Coeur Mill Rd.<br />Creve Coeur, Missouri</strong></div>
             </div>
-            <a className="text-link" href="https://maps.google.com/?q=Creve+Coeur+Mill+Rd,+Creve+Coeur,+Missouri" target="_blank" rel="noreferrer">Get directions</a>
           </div>
           <div className="cart-image image-wrap">
             <Image src="/images/sweetest-sourdough/SweetestSourdoughSTL_-7.webp" alt="The Sweets & Sourdough cart with branded signs, bagged loaves, and baked treats" fill quality={90} sizes="(max-width: 760px) 100vw, 48vw" style={{ objectPosition: "50% 40%" }} />
