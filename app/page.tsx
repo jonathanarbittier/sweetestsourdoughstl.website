@@ -27,11 +27,11 @@ const bakes = [
     position: "50% 50%",
   },
   {
-    name: "Biscuits & weekend specials",
+    name: "Weekend specials",
     description: "Buttery biscuits and rotating seasonal bakes from the weekend menu.",
-    image: "/images/sweetest-sourdough/SweetestSourdoughSTL_-44.webp",
-    alt: "A close-up assortment of biscuits, muffins, and other baked goods",
-    position: "60% 50%",
+    image: "/images/sweetest-sourdough/weekend-specials-sourdough.webp",
+    alt: "Two halves of a golden sourdough loaf stacked on a light cloth",
+    position: "50% 50%",
   },
 ];
 
