@@ -87,7 +87,7 @@
 
 .photo img {
   object-fit: cover;
-  object-position: center top;
+  object-position: 90% center;
 }
 
 .page a:focus-visible {

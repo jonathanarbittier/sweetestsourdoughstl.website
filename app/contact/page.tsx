@@ -49,7 +49,7 @@ export default function ContactPage() {
         </div>
 
         <div className={`${styles.photo} image-wrap`}>
-          <Image src="/images/sweetest-sourdough/SweetestSourdoughSTL_2nd_-13.webp" alt="The Sweets & Sourdough cart stocked with baked goods beside the neighborhood road and trees" fill quality={90} loading="eager" sizes="(max-width: 759px) 100vw, (max-width: 1434px) 34vw, 420px" />
+          <Image src="/images/sweetest-sourdough/SweetestSourdoughSTL_2nd_-52.webp" alt="The Sweets & Sourdough founder and another woman smiling beside the roadside bakery cart" fill quality={90} loading="eager" sizes="(max-width: 759px) 100vw, (max-width: 1434px) 34vw, 420px" />
         </div>
       </div>
     </div>
