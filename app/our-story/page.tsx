@@ -4,44 +4,59 @@ import OrderCTA from "../OrderCTA";
 
 export const metadata: Metadata = {
   title: "Our Story | Sweets & Sourdough",
-  description: "Meet Sweets & Sourdough, a neighborhood micro bakery serving small-batch loaves and sweet treats in Creve Coeur, Missouri.",
+  description: "How a love of organic sourdough became a family-run roadside bakery and a weekend gathering place in Creve Coeur, Missouri.",
 };
 
 export default function OurStoryPage() {
   return (
     <>
-      <div className="editorial-page section-shell">
+      <div className="editorial-page story-page section-shell">
         <section className="editorial-split story-introduction" aria-labelledby="story-heading">
           <div className="editorial-copy">
             <p className="editorial-eyebrow">Our story</p>
-            <h1 id="story-heading">Small bakery.<br />Big sourdough love.</h1>
-            <p>Sweets &amp; Sourdough is a neighborhood micro bakery serving fresh loaves and sweet treats from a roadside cart in Creve Coeur.</p>
-            <div className="story-draft">
-              <p className="editorial-eyebrow">Temporary story copy</p>
-              <p>[Add a short introduction from the founder, in their own words.]</p>
+            <h1 id="story-heading">The Story Behind Sweets &amp; Sourdough <span className="story-heart">🤎</span></h1>
+            <div className="story-prose">
+              <p>Sweets &amp; Sourdough started with a simple idea: to share our love of organic sourdough with our families, neighbors, and all the hungry soccer kids driving to and from Lou Fusz every weekend!</p>
             </div>
           </div>
           <EditorialPhoto src="/images/sweetest-sourdough/SweetestSourdoughSTL_2nd_-70.webp" alt="The Sweets & Sourdough founder smiling and holding a bagged loaf at the cart" position="50% 30%" eager />
         </section>
 
         <section className="editorial-split story-chapter" aria-labelledby="beginnings-heading">
-          <EditorialPhoto src="/images/sweetest-sourdough/SweetestSourdoughSTL_2nd_-46.webp" alt="The founder laughing with a customer beside the bakery cart" position="48% center" />
+          <EditorialPhoto src="/images/sweetest-sourdough/SweetestSourdoughSTL_2nd_-13.webp" alt="The stocked Sweets & Sourdough roadside cart" />
           <div className="editorial-copy">
-            <p className="editorial-eyebrow">Behind the bakes</p>
-            <h2 id="beginnings-heading">A story to share</h2>
-            <div className="story-draft">
-              <p className="editorial-eyebrow">Temporary story copy</p>
-              <p>[Share how the bakery began and what inspired the first bakes.]</p>
-            </div>
-            <div className="story-draft">
-              <h3>Life around the cart</h3>
-              <p>[Add a favorite memory of the cart and the people who gather here.]</p>
+            <p className="editorial-eyebrow">How it began</p>
+            <h2 id="beginnings-heading">From a hobby to the cart</h2>
+            <div className="story-prose">
+              <p>After leaving my corporate career when we welcomed our second son, I found a new love for baking and the craft of sourdough. What started as a hobby quickly turned into something more. After years of gifting bread to family and friends (and making far more than our little household could eat!), we dreamed up the idea of selling fresh bread right here on the side of our neighborhood street.</p>
+              <p>We found our little cart from the Salvation Army in downtown St. Louis; which was an antique wardrobe. With a little creativity, lots of hard work, and help from my husband, we transformed it into the sweet self-serve roadside bakery you see today.</p>
             </div>
           </div>
         </section>
-        <section className="editorial-split story-chapter" aria-label="Life and community around the cart">
-          <EditorialPhoto src="/images/sweetest-sourdough/SweetestSourdoughSTL_2nd_-48.webp" alt="The founder and a customer looking over the bakes at the stocked cart" aspectRatio="3 / 2" />
+
+        <section className="editorial-split story-chapter" aria-labelledby="family-heading">
+          <div className="editorial-copy">
+            <p className="editorial-eyebrow">Family made</p>
+            <h2 id="family-heading">The family behind it</h2>
+            <div className="story-prose">
+              <p>But the real magic is the family behind it. Our oldest loves making coffee for customers, our youngest is the official taste tester, my husband keeps everything running behind the scenes, and I’m usually covered in flour making it all happen!</p>
+              <p>Every Saturday and Sunday, we open our little cart with one hope: to share delicious, thoughtfully made organic sourdough breads and treats with our community.</p>
+            </div>
+          </div>
+          <EditorialPhoto src="/images/real-packaging.webp" alt="Bagged sourdough biscuits displayed at the cart" position="50% 55%" />
+        </section>
+
+        <section className="editorial-split story-chapter" aria-labelledby="community-heading">
           <EditorialPhoto src="/images/sweetest-sourdough/SweetestSourdoughSTL_2nd_-67.webp" alt="The founder and a group of neighbors smiling together in front of the bakery carts" aspectRatio="3 / 2" />
+          <div className="editorial-copy">
+            <p className="editorial-eyebrow">Around the cart</p>
+            <h2 id="community-heading">A little more than bread</h2>
+            <div className="story-prose">
+              <p>Somewhere along the way, this little cart became so much more than a place to buy bread. It’s become a place for familiar faces, new friendships, weekend traditions, and a little joy in the middle of our busy lives.</p>
+              <p>We’re so grateful for every person who stops by, supports our family, and makes this dream possible.</p>
+              <p className="story-closing">Small cart, big dreams, fresh bread, full hearts. From our family to yours, we’re so happy you’re here!</p>
+            </div>
+          </div>
         </section>
       </div>
       <OrderCTA />
