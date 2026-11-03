@@ -13,8 +13,7 @@ export default function OurStoryPage() {
       <div className="editorial-page story-page section-shell">
         <section className="editorial-split story-introduction" aria-labelledby="story-heading">
           <div className="editorial-copy">
-            <p className="editorial-eyebrow">Our story</p>
-            <h1 id="story-heading">The Story Behind Sweets &amp; Sourdough <span className="story-heart">🤎</span></h1>
+            <h1 id="story-heading">The Story Behind Sweets &amp; Sourdough</h1>
             <div className="story-prose">
               <p>Sweets &amp; Sourdough started with a simple idea: to share our love of organic sourdough with our families, neighbors, and all the hungry soccer kids driving to and from Lou Fusz every weekend!</p>
             </div>
@@ -25,7 +24,6 @@ export default function OurStoryPage() {
         <section className="editorial-split story-chapter" aria-labelledby="beginnings-heading">
           <EditorialPhoto src="/images/sweetest-sourdough/SweetestSourdoughSTL_2nd_-13.webp" alt="The stocked Sweets & Sourdough roadside cart" />
           <div className="editorial-copy">
-            <p className="editorial-eyebrow">How it began</p>
             <h2 id="beginnings-heading">From a hobby to the cart</h2>
             <div className="story-prose">
               <p>After leaving my corporate career when we welcomed our second son, I found a new love for baking and the craft of sourdough. What started as a hobby quickly turned into something more. After years of gifting bread to family and friends (and making far more than our little household could eat!), we dreamed up the idea of selling fresh bread right here on the side of our neighborhood street.</p>
@@ -36,7 +34,6 @@ export default function OurStoryPage() {
 
         <section className="editorial-split story-chapter" aria-labelledby="family-heading">
           <div className="editorial-copy">
-            <p className="editorial-eyebrow">Family made</p>
             <h2 id="family-heading">The family behind it</h2>
             <div className="story-prose">
               <p>But the real magic is the family behind it. Our oldest loves making coffee for customers, our youngest is the official taste tester, my husband keeps everything running behind the scenes, and I’m usually covered in flour making it all happen!</p>
@@ -49,7 +46,6 @@ export default function OurStoryPage() {
         <section className="editorial-split story-chapter" aria-labelledby="community-heading">
           <EditorialPhoto src="/images/sweetest-sourdough/SweetestSourdoughSTL_2nd_-67.webp" alt="The founder and a group of neighbors smiling together in front of the bakery carts" aspectRatio="3 / 2" />
           <div className="editorial-copy">
-            <p className="editorial-eyebrow">Around the cart</p>
             <h2 id="community-heading">A little more than bread</h2>
             <div className="story-prose">
               <p>Somewhere along the way, this little cart became so much more than a place to buy bread. It’s become a place for familiar faces, new friendships, weekend traditions, and a little joy in the middle of our busy lives.</p>
