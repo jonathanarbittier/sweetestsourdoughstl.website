@@ -16,6 +16,9 @@ export default function ContactPage() {
           <section aria-labelledby="contact-details-heading">
             <h1 id="contact-details-heading">Contact</h1>
             <dl className={styles.contactList}>
+              {/* Example values to replace once public contact details are confirmed. */}
+              <div><dt>Email</dt><dd>hello@example.com</dd></div>
+              <div><dt>Phone</dt><dd>(000) 000-0000</dd></div>
               <div>
                 <dt>Instagram</dt>
                 <dd><a className="text-link" href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">@sweetestsourdoughstl</a></dd>
