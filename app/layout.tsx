@@ -22,6 +22,7 @@ export const metadata: Metadata = {
   title: "Sweets & Sourdough | Creve Coeur Micro Bakery",
   description:
     "Small batch sourdough and sweet bakes from a roadside cart in Creve Coeur, Missouri.",
+  icons: { icon: "/images/sweetest-sourdough/logo-badge.png" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

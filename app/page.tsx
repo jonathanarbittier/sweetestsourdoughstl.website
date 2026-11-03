@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import GalleryCarousel from "./GalleryCarousel";
-import { HOTPLATE_URL } from "./site-links";
+import { HOTPLATE_URL, INSTAGRAM_URL } from "./site-links";
 
 function Button({ children, href = HOTPLATE_URL, light = false }: { children: React.ReactNode; href?: string; light?: boolean }) {
   return (
@@ -15,7 +15,7 @@ const bakes = [
   {
     name: "Sourdough",
     description: "Naturally leavened loaves, baked in small batches for the weekend.",
-    image: "/images/sweetest-sourdough/SweetestSourdoughSTL_-4.webp",
+    image: "/images/sweetest-sourdough/sourdough-loaf-in-bag.webp",
     alt: "A crusty sourdough loaf in a paper bag with the Sweets & Sourdough sticker",
     position: "50% 50%",
   },
@@ -40,7 +40,7 @@ export default function Home() {
     <>
       <section className="hero">
         <div className="hero-image image-wrap">
-          <Image src="/images/real-hero.webp" alt="Sweets & Sourdough roadside carts with the baker and a customer" fill priority quality={90} sizes="100vw" />
+          <Image src="/images/sweetest-sourdough/cart-and-customer.webp" alt="Sweets & Sourdough roadside carts with the baker and a customer" fill priority quality={90} sizes="100vw" />
         </div>
         <div className="hero-shade" aria-hidden="true"></div>
         <div className="hero-copy">
@@ -60,7 +60,7 @@ export default function Home() {
             </div>
           </div>
           <div className="cart-image image-wrap">
-            <Image src="/images/sweetest-sourdough/SweetestSourdoughSTL_-7.webp" alt="The Sweets & Sourdough cart with branded signs, bagged loaves, and baked treats" fill quality={90} sizes="(max-width: 760px) 100vw, 48vw" style={{ objectPosition: "50% 40%" }} />
+            <Image src="/images/sweetest-sourdough/stocked-cart.webp" alt="The Sweets & Sourdough cart with branded signs, bagged loaves, and baked treats" fill quality={90} sizes="(max-width: 760px) 100vw, 48vw" style={{ objectPosition: "50% 40%" }} />
             <div className="cart-sign"><span>Bread</span><i>&amp;</i><span>Treats</span></div>
           </div>
         </div>
@@ -88,7 +88,7 @@ export default function Home() {
 
       <section className="story" id="story">
         <div className="story-image image-wrap">
-          <Image src="/images/sweetest-sourdough/SweetestSourdoughSTL_2nd_-67.webp" alt="The founder and a group of neighbors smiling together in front of the bakery carts" fill quality={90} sizes="(max-width: 759px) 100vw, 54vw" style={{ objectPosition: "50% 50%" }} />
+          <Image src="/images/sweetest-sourdough/neighbors-at-cart.webp" alt="The founder and a group of neighbors smiling together in front of the bakery carts" fill quality={90} sizes="(max-width: 759px) 100vw, 54vw" style={{ objectPosition: "50% 50%" }} />
         </div>
         <div className="story-copy">
           <div>
@@ -109,7 +109,7 @@ export default function Home() {
           <p>Fresh bakes, familiar faces and weekends in Creve Coeur.</p>
         </div>
         <GalleryCarousel />
-        <a className="gallery-follow gallery-follow--below" href="https://instagram.com/sweetestsourdoughstl" target="_blank" rel="noreferrer">Follow @sweetestsourdoughstl</a>
+        <a className="gallery-follow gallery-follow--below" href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">Follow @sweetestsourdoughstl</a>
       </section>
 
       <section className="preorder" id="preorder">

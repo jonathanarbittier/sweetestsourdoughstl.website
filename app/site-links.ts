@@ -1,5 +1,5 @@
 export const HOTPLATE_URL = "https://www.hotplate.com/sweetsandsourdoughstl";
-export const INSTAGRAM_URL = "https://instagram.com/sweetestsourdoughstl";
+export const INSTAGRAM_URL = "https://www.instagram.com/sweetestsourdoughstl/";
 
 export const SITE_NAV_LINKS = [
   { href: "/", label: "Home" },

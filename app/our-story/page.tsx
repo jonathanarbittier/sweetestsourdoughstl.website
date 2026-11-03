@@ -18,11 +18,11 @@ export default function OurStoryPage() {
               <p>Sweets &amp; Sourdough started with a simple idea: to share our love of organic sourdough with our families, neighbors, and all the hungry soccer kids driving to and from Lou Fusz every weekend!</p>
             </div>
           </div>
-          <EditorialPhoto src="/images/sweetest-sourdough/SweetestSourdoughSTL_2nd_-70.webp" alt="The Sweets & Sourdough founder smiling and holding a bagged loaf at the cart" position="50% 30%" eager />
+          <EditorialPhoto src="/images/sweetest-sourdough/founder-with-loaf.webp" alt="The Sweets & Sourdough founder smiling and holding a bagged loaf at the cart" position="50% 30%" eager />
         </section>
 
         <section className="editorial-split story-chapter" aria-labelledby="beginnings-heading">
-          <EditorialPhoto src="/images/sweetest-sourdough/SweetestSourdoughSTL_2nd_-13.webp" alt="The stocked Sweets & Sourdough roadside cart" />
+          <EditorialPhoto src="/images/sweetest-sourdough/roadside-cart.webp" alt="The stocked Sweets & Sourdough roadside cart" />
           <div className="editorial-copy">
             <h2 id="beginnings-heading">From a hobby to the cart</h2>
             <div className="story-prose">
@@ -40,11 +40,11 @@ export default function OurStoryPage() {
               <p>Every Saturday and Sunday, we open our little cart with one hope: to share delicious, thoughtfully made organic sourdough breads and treats with our community.</p>
             </div>
           </div>
-          <EditorialPhoto src="/images/real-packaging.webp" alt="Bagged sourdough biscuits displayed at the cart" position="50% 55%" />
+          <EditorialPhoto src="/images/sweetest-sourdough/packaged-biscuits.webp" alt="Bagged sourdough biscuits displayed at the cart" position="50% 55%" />
         </section>
 
         <section className="editorial-split story-chapter" aria-labelledby="community-heading">
-          <EditorialPhoto src="/images/sweetest-sourdough/SweetestSourdoughSTL_2nd_-67.webp" alt="The founder and a group of neighbors smiling together in front of the bakery carts" aspectRatio="3 / 2" />
+          <EditorialPhoto src="/images/sweetest-sourdough/neighbors-at-cart.webp" alt="The founder and a group of neighbors smiling together in front of the bakery carts" aspectRatio="3 / 2" />
           <div className="editorial-copy">
             <h2 id="community-heading">A little more than bread</h2>
             <div className="story-prose">
