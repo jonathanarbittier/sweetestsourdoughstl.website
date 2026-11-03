@@ -312,7 +312,7 @@ h2 {
 .instagram-rail {
   display: flex;
   width: max-content;
-  animation: instagram-marquee 75s linear infinite;
+  animation: instagram-marquee 48s linear infinite;
   will-change: transform;
 }
 .instagram-set {
@@ -483,6 +483,7 @@ footer .brand { width: 84px; height: 84px; margin-bottom: 44px; }
   .gallery-intro p { max-width: none; font-size: 13px; }
   .instagram-feed { --instagram-card-width: calc((100cqw - 2 * clamp(16px, 2vw, 24px)) / 3); container-type: inline-size; width: 100%; max-width: 1128px; margin: 0 auto; padding: 0; scroll-padding-inline: 0; }
   .instagram-feed { --instagram-gap: clamp(16px, 2vw, 24px); }
+  .instagram-rail { animation-duration: 75s; }
   .gallery-follow--below { margin: 32px 0 0; }
   .stripe-band { height: 34px; background-size: auto; }
   .preorder-inner { padding: 100px 20px 112px; }
