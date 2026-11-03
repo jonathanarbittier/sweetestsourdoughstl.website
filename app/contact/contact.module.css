@@ -55,20 +55,6 @@
   line-height: 1.6;
 }
 
-.contactList dd > span,
-.contactList dd > small {
-  display: block;
-}
-
-.contactList dd > small {
-  font-size: 12px;
-  line-height: 1.5;
-}
-
-.contactList dd > small {
-  margin-top: 3px;
-}
-
 .contactList :global(.text-link) {
   max-width: 100%;
   margin-top: 0;

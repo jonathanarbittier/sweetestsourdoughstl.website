@@ -17,22 +17,6 @@ export default function ContactPage() {
             <h1 id="contact-details-heading">Contact</h1>
             <dl className={styles.contactList}>
               <div>
-                <dt>Email</dt>
-                <dd>
-                  {/* Temporary placeholder: replace with the verified public email before making this a mailto link. */}
-                  <span>hello@example.com</span>
-                  <small>Temporary placeholder</small>
-                </dd>
-              </div>
-              <div>
-                <dt>Phone</dt>
-                <dd>
-                  {/* Temporary placeholder: replace with the verified public number before making this a tel link. */}
-                  <span>(000) 000-0000</span>
-                  <small>Temporary placeholder</small>
-                </dd>
-              </div>
-              <div>
                 <dt>Instagram</dt>
                 <dd><a className="text-link" href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">@sweetestsourdoughstl</a></dd>
               </div>
