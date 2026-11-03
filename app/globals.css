@@ -268,7 +268,7 @@ h2 {
 .bake-order { display: inline-flex; align-items: center; padding-bottom: 3px; border-bottom: 1px solid var(--navy); font-size: 11px; font-weight: 600; }
 .menu-link { margin-left: 24px; }
 
-.story-image { height: 102vw; max-height: 720px; }
+.story-image { height: 102vw; max-height: 720px; border-radius: 15px; }
 .story-image img { object-position: 40% 54%; }
 .story-copy { padding: 77px 19px 82px; }
 .story-copy h2 { font-size: 49px; }
