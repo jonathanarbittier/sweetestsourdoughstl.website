@@ -129,3 +129,10 @@
     width: 100%;
   }
 }
+
+@media (min-width: 1024px) {
+  .layout {
+    grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+    column-gap: 5vw;
+  }
+}
