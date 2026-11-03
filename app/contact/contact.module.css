@@ -112,6 +112,11 @@
     gap: 17px;
   }
 
+  .contactList dd {
+    display: flex;
+    align-items: flex-start;
+  }
+
   .visitList {
     grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
     gap: 20px;
